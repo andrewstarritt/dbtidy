@@ -1,0 +1,5 @@
+dbtidy.egg-info/
+*.pyc
+*.db
+*.template
+*~
