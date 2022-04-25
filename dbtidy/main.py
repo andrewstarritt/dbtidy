@@ -20,7 +20,7 @@ def process_argument(filename):
 
         # Create a backup file.
         # Note: we copy, as opposed to do moving original to create the back up
-        # and then creating a new file, and ten process from the backup back to the
+        # and then creating a new file, and then process from the backup back to the
         # original file. In this way, filename remains the same file and gets updated.
         # This preserves attributes and, at least on Linux, the inode number, and any 
         # file system hard linking to the file is preserved.
@@ -57,7 +57,7 @@ is created with the name '<filename>.~'.
 Note: {name} does not handle extended fields and extended info structures
 very well (yet).
 
-Copyright (c) 2007-2020  Andrew C. Starritt
+Copyright (c) 2007-2021  Andrew C. Starritt
 
 Transcoded from original Ada dbtidy program to Python in 2020, which
 itself was based loosely on my Delphi Pascal tidy program.
