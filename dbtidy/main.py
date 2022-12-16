@@ -20,11 +20,11 @@ def process_argument(filename):
         print(filename)
 
         # Create a backup file.
-        # Note: we copy, as opposed to do moving original to create the back up
-        # and then creating a new file, and then process from the backup back to the
-        # original file. In this way, filename remains the same file and gets updated.
-        # This preserves attributes and, at least on Linux, the inode number, and any
-        # file system hard linking to the file is preserved.
+        # Note: we copy, as opposed to do moving original, file to create the back up
+        # and there by create a new file; and then process from the backup file back
+        # to the original file. In this way, filename remains the same file and gets
+        # updated. This preserves attributes and, at least on Linux, the inode number,
+        # and any file-system hard links to the file are preserved.
         #
         shutil.copy(filename, backup)
 

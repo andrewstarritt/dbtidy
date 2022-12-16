@@ -1,3 +1,4 @@
+build/
 dbtidy.egg-info/
 *.pyc
 *.db
